@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083509302171",
+    "project_id": "codojo-9e1f9",
+    "storage_bucket": "codojo-9e1f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083509302171:android:1a1fe146bbbf6bb5de773e",
+        "android_client_info": {
+          "package_name": "com.example.nyeste_reka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx39_A5VpDeeO4qkOVWoKl1NKcG-KjjAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
