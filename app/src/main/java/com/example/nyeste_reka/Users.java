@@ -1,18 +1,24 @@
 package com.example.nyeste_reka;
 
 public class Users {
-    String username, fullname, email, password;
+    String  fullname, username,  password, email;
 
     public Users() {
     }
 
-    public Users(String fullname, String username, String email, String password) {
+    public Users(String fullname, String username,  String password, String email) {
         this.fullname = fullname;
         this.username = username;
-        this.email = email;
         this.password = password;
+        this.email = email;
+    }
+    public String getFullname() {
+        return fullname;
     }
 
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
     public String getUsername() {
         return username;
     }
@@ -21,21 +27,6 @@ public class Users {
         this.username = username;
     }
 
-    public String getFullname() {
-        return fullname;
-    }
-
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getPassword() {
         return password;
@@ -44,4 +35,13 @@ public class Users {
     public void setPassword(String password) {
         this.password = password;
     }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
 }
