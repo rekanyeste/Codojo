@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,60 +19,53 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private TextInputEditText username, password, confirmPassword;
+    private TextInputEditText fullname, username, password, email;
     private Button registerButton;
-    private FirebaseAuth auth;
+    private FirebaseDatabase database;
+    private DatabaseReference reference;
     private TextView alreadyLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        fullname = findViewById(R.id.idEditName);
         username = findViewById(R.id.idEditUsername);
         password = findViewById(R.id.idEditPassword);
-        confirmPassword = findViewById(R.id.idEditPwAgain);
+        email = findViewById(R.id.idEditEmailReg);
         registerButton = findViewById(R.id.idRegisterButton);
         alreadyLogin = findViewById(R.id.idAlLogin);
-        auth = FirebaseAuth.getInstance();
 
-        //bejelentkező szöveg alul hivatkozás
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                database = FirebaseDatabase.getInstance();
+                reference = database.getReference("users");
+
+                String fname = fullname.getText().toString();
+                String uname = username.getText().toString();
+                String pwd = password.getText().toString();
+                String emailAdd = email.getText().toString();
+
+                Users users = new Users(fname, uname, pwd, emailAdd);
+                reference.child(uname).setValue(users);
+
+                Toast.makeText(RegisterActivity.this, "Sikeres regisztráció!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         alreadyLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intent);
-            }
-        });
-
-        //regisztrációs gomb
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String userN = username.getText().toString();
-                String passW = password.getText().toString();
-                String pwdAg = confirmPassword.getText().toString();
-                if (!passW.equals(pwdAg)){
-                    Toast.makeText(RegisterActivity.this, "Jelszavak nem egyeznek!", Toast.LENGTH_SHORT).show();
-                } else if(TextUtils.isEmpty(userN) && TextUtils.isEmpty(passW) && TextUtils.isEmpty(pwdAg)){
-                    Toast.makeText(RegisterActivity.this, "A mezők üresek!", Toast.LENGTH_SHORT).show();
-                } else {
-                    auth.createUserWithEmailAndPassword(userN, passW).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()){
-                                Toast.makeText(RegisterActivity.this, "Sikeres regisztráció!", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                                startActivity(intent);
-                                finish();
-                            } else{
-                                Toast.makeText(RegisterActivity.this, "Sikertelen regisztráció!", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
-                }
             }
         });
 

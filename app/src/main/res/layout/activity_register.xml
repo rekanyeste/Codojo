@@ -10,10 +10,37 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/registerIdUsername"
+        android:id="@+id/registerIdName"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="28dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
+        android:hint="@string/name"
+        style="@style/Widget.Design.TextInputLayout"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/round_person_24"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/aldrich"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerIdUsername"
+        android:layout_below="@id/registerIdName"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="30dp"
         android:hint="@string/hintUsername"
         style="@style/Widget.Design.TextInputLayout"
         android:padding="5dp"
@@ -24,6 +51,8 @@
             android:id="@+id/idEditUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/round_person_24"
+            android:drawablePadding="10sp"
             android:fontFamily="@font/aldrich"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
@@ -33,12 +62,12 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/registerIdPassword"
-        android:layout_below="@id/idEditUsername"
+        android:layout_below="@id/registerIdUsername"
         style="@style/Widget.Design.TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="28dp"
         android:hint="@string/registerHintPassw"
         android:padding="5dp"
@@ -50,6 +79,8 @@
             android:id="@+id/idEditPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:drawablePadding="10sp"
             android:fontFamily="@font/aldrich"
             android:importantForAutofill="no"
             android:inputType="textPassword"
@@ -58,27 +89,29 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/registerIdPwAgain"
+        android:id="@+id/idEmailAddressReg"
         android:layout_below="@id/registerIdPassword"
         style="@style/Widget.Design.TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="28dp"
-        android:hint="@string/registerHintPwdAgain"
+        android:hint="@string/emailAddress"
         android:padding="5dp"
         android:textColorHint="@color/white"
         app:hintTextColor="@color/white"
         tools:ignore="NotSibling">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/idEditPwAgain"
+            android:id="@+id/idEditEmailReg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:drawablePadding="10sp"
             android:fontFamily="@font/aldrich"
             android:importantForAutofill="no"
-            android:inputType="textPassword"
+            android:inputType="textEmailAddress"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -88,7 +121,7 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registerIdPwAgain"
+        android:layout_below="@id/idEmailAddressReg"
         android:layout_marginStart="90dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="90dp"
@@ -101,13 +134,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/idAlLogin"
         android:layout_below="@id/idRegisterButton"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="@string/textAlreadyUser"
+        android:text="@string/newUserLogin3"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:fontFamily="@font/aldrich"
         android:textStyle="italic"
         />

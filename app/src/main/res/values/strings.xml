@@ -5,4 +5,11 @@
     <string name="registerHintPwdAgain">Jelszó megerősítése</string>
     <string name="registerBtn">Regisztráció</string>
     <string name="textAlreadyUser">Már regisztrált? Jelentkezzen be!</string>
+    <string name="loginButton">Belépés</string>
+    <string name="newUserRegi">Új fiók? Regisztráljon!</string>
+    <string name="newUserRegi2">Úgy vagy itt? Regisztrálj!</string>
+    <string name="newUserLogin3">Már regisztráltál? Lépj be!</string>
+    <string name="newUserLogin4">Új vagy itt? Regisztrálj!</string>
+    <string name="emailAddress">Email cím</string>
+    <string name="name">Név</string>
 </resources>
