@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Codojo</string>
+    <string name="hintUsername">Felhasználónév</string>
+    <string name="registerHintPassw">Jelszó</string>
+    <string name="registerHintPwdAgain">Jelszó megerősítése</string>
+    <string name="registerBtn">Regisztráció</string>
+    <string name="textAlreadyUser">Már regisztrált? Jelentkezzen be!</string>
 </resources>
