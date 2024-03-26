@@ -89,17 +89,25 @@ public class LoginActivity extends AppCompatActivity {
         String passw = loginPassword.getText().toString().trim();
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
-        Query checkUserDatabase = reference.orderByChild("users").equalTo(user);
+        Query checkUserDatabase = reference.orderByChild("Felhasználónév").equalTo(user);
         checkUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     loginUsername.setError(null);
-                    String passwFromDB = snapshot.child(user).child("users").getValue(String.class);
+                    String passwFromDB = snapshot.child(user).child("Jelszó").getValue(String.class);
 
                     if (passwFromDB.equals(passw)){
                         loginUsername.setError(null);
+
+                        String fullnameFromDB = snapshot.child(user).child("Teljes név").getValue(String.class);
+                        String emailFromDB = snapshot.child(user).child("Email cím").getValue(String.class);
+                        String usernameFromDB = snapshot.child(user).child("Felhasználónév").getValue(String.class);
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        intent.putExtra("Teljes név", fullnameFromDB);
+                        intent.putExtra("Felhasználónév", usernameFromDB);
+                        intent.putExtra("Jelszó", passwFromDB);
+                        intent.putExtra("Email cím", emailFromDB);
                         startActivity(intent);
                     } else{
                         loginPassword.setError("Helytelen adatok!");
