@@ -89,25 +89,28 @@ public class LoginActivity extends AppCompatActivity {
         String passw = loginPassword.getText().toString().trim();
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
-        Query checkUserDatabase = reference.orderByChild("Felhasználónév").equalTo(user);
+        Query checkUserDatabase = reference.orderByChild("username").equalTo(user);
         checkUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
                     loginUsername.setError(null);
-                    String passwFromDB = snapshot.child(user).child("Jelszó").getValue(String.class);
+                    String passwFromDB = snapshot.child(user).child("password").getValue(String.class);
 
                     if (passwFromDB.equals(passw)){
                         loginUsername.setError(null);
 
-                        String fullnameFromDB = snapshot.child(user).child("Teljes név").getValue(String.class);
-                        String emailFromDB = snapshot.child(user).child("Email cím").getValue(String.class);
-                        String usernameFromDB = snapshot.child(user).child("Felhasználónév").getValue(String.class);
+                        String fullnameFromDB = snapshot.child(user).child("fullname").getValue(String.class);
+                        String emailFromDB = snapshot.child(user).child("email").getValue(String.class);
+                        String usernameFromDB = snapshot.child(user).child("username").getValue(String.class);
+
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                        intent.putExtra("Teljes név", fullnameFromDB);
-                        intent.putExtra("Felhasználónév", usernameFromDB);
-                        intent.putExtra("Jelszó", passwFromDB);
-                        intent.putExtra("Email cím", emailFromDB);
+
+                        intent.putExtra("fullname", fullnameFromDB);
+                        intent.putExtra("username", usernameFromDB);
+                        intent.putExtra("password", passwFromDB);
+                        intent.putExtra("email", emailFromDB);
+
                         startActivity(intent);
                     } else{
                         loginPassword.setError("Helytelen adatok!");
