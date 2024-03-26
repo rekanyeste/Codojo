@@ -7,6 +7,38 @@
     android:background="@drawable/background"
     tools:context=".LoginActivity">
 
+
+    <TextView
+        android:id="@+id/codojo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginIdUsername"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-100dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/codojo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginIdUsername"
+        android:layout_marginBottom="-115dp"
+        android:id="@+id/szalagcim"
+        android:textStyle="italic"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:text="@string/szalagcim"
+        >
+
+    </TextView>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
