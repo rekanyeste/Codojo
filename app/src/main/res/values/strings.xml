@@ -15,4 +15,12 @@
     <string name="codojo">Codojo</string>
     <string name="szalagcim">Feketeöves a kódolásban!</string>
     <string name="regiSzalagcim">Regisztráció</string>
+    <string name="profil">Profil</string>
+    <string name="lernings">Tanulnivalók</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="learnings">Tanulnivalók</string>
+    <string name="codojo_menu">Codojo</string>
+    <string name="menu_navbar">Navbar</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
