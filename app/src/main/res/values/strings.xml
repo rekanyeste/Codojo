@@ -23,4 +23,11 @@
     <string name="menu_navbar">Navbar</string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    <string name="editProfileText">Adatok módosítása</string>
+    <string name="fullname">Név</string>
+    <string name="editUsername">Felhasználónév</string>
+    <string name="editPwd">Jelszó</string>
+    <string name="editEmail">Email</string>
+    <string name="save">Mentés</string>
+    <string name="back">Vissza</string>
 </resources>
