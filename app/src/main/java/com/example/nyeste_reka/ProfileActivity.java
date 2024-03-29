@@ -54,30 +54,12 @@ public class ProfileActivity extends AppCompatActivity {
         String passwordUser = sharedPref.getString("password", null);
         String emailUser = sharedPref.getString("email", null);
 
-        String userName = profUsername.getText().toString().trim();
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
-        Query check = databaseReference.orderByChild("username").equalTo(userName);
-        check.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                if (snapshot.exists()){
-
-                }
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
         logFullname.setText(fullnameUser);
         logUsername.setText(usernameUser);
         profFullname.setText(fullnameUser);
         profUsername.setText(usernameUser);
         profPassword.setText(passwordUser);
         profEmail.setText(emailUser);
-
 
     }
     public void Check(){
