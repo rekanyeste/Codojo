@@ -47,6 +47,8 @@ public class EditProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (ChangeFullname() || ChangeEmail() || ChangePassword()){
                     Toast.makeText(EditProfileActivity.this, "Elmentve", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(EditProfileActivity.this, MainActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(EditProfileActivity.this, "Hiba", Toast.LENGTH_SHORT).show();
                 }
