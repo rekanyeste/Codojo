@@ -41,32 +41,26 @@ public class RegisterActivity extends AppCompatActivity {
         registerButton = findViewById(R.id.idRegisterButton);
         alreadyLogin = findViewById(R.id.idAlLogin);
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                database = FirebaseDatabase.getInstance();
-                reference = database.getReference("users");
+        registerButton.setOnClickListener(view -> {
+            database = FirebaseDatabase.getInstance();
+            reference = database.getReference("users");
 
-                String fname = fullname.getText().toString();
-                String uname = username.getText().toString();
-                String pwd = password.getText().toString();
-                String emailAdd = email.getText().toString();
+            String fname = fullname.getText().toString();
+            String uname = username.getText().toString();
+            String pwd = password.getText().toString();
+            String emailAdd = email.getText().toString();
 
-                Users users = new Users(fname, uname, pwd, emailAdd);
-                reference.child(uname).setValue(users);
+            Users users = new Users(fname, uname, pwd, emailAdd);
+            reference.child(uname).setValue(users);
 
-                Toast.makeText(RegisterActivity.this, "Sikeres regisztráció!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
+            Toast.makeText(RegisterActivity.this, "Sikeres regisztráció!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+            startActivity(intent);
         });
 
-        alreadyLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
+        alreadyLogin.setOnClickListener(view -> {
+            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+            startActivity(intent);
         });
 
     }

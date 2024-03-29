@@ -30,4 +30,17 @@
     <string name="editEmail">Email</string>
     <string name="save">Mentés</string>
     <string name="back">Vissza</string>
+    <string name="dataShow">Felhasználói adatok</string>
+    <string name="next">Következő</string>
+    <string name="fName">Teljes név</string>
+    <string name="loggedUser">Felhasználónév</string>
+    <string name="nev">Név</string>
+    <string name="nev2">név</string>
+    <string name="email">Email</string>
+    <string name="email2">email</string>
+    <string name="felhaszn_l_n_v">Felhasználónév</string>
+    <string name="username2">felhasználónév</string>
+    <string name="pwd1">Jelszó</string>
+    <string name="pwd2">jelszó</string>
+    <string name="change">Megváltoztat</string>
 </resources>

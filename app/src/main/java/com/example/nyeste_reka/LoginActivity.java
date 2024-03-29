@@ -3,7 +3,9 @@ package com.example.nyeste_reka;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -44,22 +46,16 @@ public class LoginActivity extends AppCompatActivity {
         registerUserTextView = findViewById(R.id.idNewUser);
         loginButton = findViewById(R.id.idLoginButton);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!checkUsername() | !checkPassword()){
+        loginButton.setOnClickListener(view -> {
+            if (!checkUsername() | !checkPassword()){
 
-                } else{
-                    checkUser();
-                }
+            } else{
+                checkUser();
             }
         });
-        registerUserTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
+        registerUserTextView.setOnClickListener(view -> {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
     }
 
@@ -103,6 +99,15 @@ public class LoginActivity extends AppCompatActivity {
                         String fullnameFromDB = snapshot.child(user).child("fullname").getValue(String.class);
                         String emailFromDB = snapshot.child(user).child("email").getValue(String.class);
                         String usernameFromDB = snapshot.child(user).child("username").getValue(String.class);
+                        String passwordFromDB = snapshot.child(user).child("password").getValue(String.class);
+
+                        SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("fullname", fullnameFromDB);
+                        editor.putString("email", emailFromDB);
+                        editor.putString("username", usernameFromDB);
+                        editor.putString("password", passwordFromDB);
+                        editor.apply();
 
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 
