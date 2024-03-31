@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".QuizActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_marginTop="230sp"
+        android:id="@+id/courseChoose"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/btnCourseJava"
+        android:layout_width="300sp"
+        android:layout_height="120sp"
+        android:layout_below="@id/courseChoose"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginEnd="230sp"
+        android:background="#CC651FFF"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/courseJava"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnCourseCSharp"
+        android:layout_width="300sp"
+        android:layout_height="120sp"
+        android:layout_below="@id/courseChoose"
+        android:layout_marginStart="230sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginEnd="20sp"
+        android:background="#CC651FFF"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/CSharpC"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

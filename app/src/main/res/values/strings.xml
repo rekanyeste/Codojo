@@ -43,4 +43,8 @@
     <string name="pwd1">Jelszó</string>
     <string name="pwd2">jelszó</string>
     <string name="change">Megváltoztat</string>
+    <string name="chose">Kérlek válassz egy kurzust</string>
+    <string name="choose">Kérlek, válassz egy kurzust!</string>
+    <string name="courseJava">Java</string>
+    <string name="CSharpC">C#</string>
 </resources>
