@@ -18,9 +18,11 @@
         android:textColor="@color/white"
         android:textSize="35sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="63dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/loggedUsername"
@@ -177,10 +179,8 @@
 
     <Button
         android:id="@+id/editButton"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#AE3333"
         android:fontFamily="@font/aldrich"
         android:gravity="center"
@@ -188,7 +188,9 @@
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/linearLayout"
-        app:layout_constraintStart_toStartOf="@id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.376" />
 </androidx.constraintlayout.widget.ConstraintLayout>
