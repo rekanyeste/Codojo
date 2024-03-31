@@ -16,10 +16,10 @@
         android:theme="@style/Theme.Codojo"
         tools:targetApi="31">
         <activity
-            android:name=".CSharpCourseActivity"
+            android:name=".CSharpCourseListActivity"
             android:exported="false" />
         <activity
-            android:name=".JavaCourseActivity"
+            android:name=".JavaCourseListActivity"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"

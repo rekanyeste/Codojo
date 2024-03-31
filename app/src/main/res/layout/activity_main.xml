@@ -41,7 +41,7 @@
             android:gravity="center"
             android:text="Üdv a programozás csodálatos világában! Ismerd meg a kódolás titkait és lépj be egy olyan világba, ahol csak a képzelet szab határt!"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="26sp" />
 
 
     </RelativeLayout>

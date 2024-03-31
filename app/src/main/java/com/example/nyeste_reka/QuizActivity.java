@@ -19,7 +19,7 @@ public class QuizActivity extends AppCompatActivity {
         buttonJava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this, JavaCourseActivity.class);
+                Intent intent = new Intent(QuizActivity.this, JavaCourseListActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -28,7 +28,7 @@ public class QuizActivity extends AppCompatActivity {
         buttonCSharp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this, CSharpCourseActivity.class);
+                Intent intent = new Intent(QuizActivity.this, CSharpCourseListActivity.class);
                 startActivity(intent);
                 finish();
             }
