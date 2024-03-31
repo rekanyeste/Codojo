@@ -11,10 +11,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
+    public FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
         //az egyedi téma miatt nem lesz nullpointer
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -49,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.logout:{
-                Toast.makeText(this, "Kijelentkeztél!", Toast.LENGTH_SHORT).show();
+                mAuth.signOut();
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
                 break;
             }
         }
