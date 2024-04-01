@@ -47,4 +47,21 @@
     <string name="choose">Kérlek, válassz egy kurzust!</string>
     <string name="courseJava">Java</string>
     <string name="CSharpC">C#</string>
+    <string name="javaCourses">Java kurzusok és kvízek</string>
+    <string name="intro">Bevezetés</string>
+    <string name="home">Főoldal</string>
+    <string name="backCourse">Vissza</string>
+    <string name="variJava">Változók</string>
+    <string name="quizVariables">Változók kvíz</string>
+    <string name="operatorsJava">Operátorok</string>
+    <string name="operatorsQuiz">Operátorok kvíz</string>
+    <string name="controls">Elágazások, ciklusok</string>
+    <string name="controlsQuiz">Elágazások, ciklusok kvíz</string>
+    <string name="arrays">Tömbök, listák</string>
+    <string name="arraysQuiz">Tömbök, listák kvíz</string>
+    <string name="methods">Metódusok</string>
+    <string name="methodsQuiz">Metódusok kvíz</string>
+    <string name="classes">Osztályok</string>
+    <string name="type">Típuskonverziók</string>
+    <string name="finalQuiz">Java összegző kvíz</string>
 </resources>
