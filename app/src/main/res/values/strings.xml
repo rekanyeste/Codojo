@@ -73,4 +73,14 @@
     <string name="OOPJava">Objektumorientált programozás alapjai</string>
     <string name="TV_04">Az objektumorientált programozás (OOP) alapvető elvei közé tartozik az öröklődés, az absztrakció, az egységbezárás és a sokalakúság. Ezek az elvek lehetővé teszik a programok moduláris tervezését, a kód újrafelhasználhatóságát és a fejlesztési folyamat hatékonyságát. A Java szorosan követi az OOP elveit, és lehetőséget biztosít osztályok és objektumok létrehozására, öröklődésre vagy interfészek implementálására is.</string>
     <string name="backToJavaCourseList">Vissza</string>
+    <string name="variables01">Változók</string>
+    <string name="TV_11">A változók az adatok tárolására szolgáló névvel ellátott helyek a memóriában. A változóknak lehet egy vagy több típusa, amely meghatározza, hogy milyen adatokat tárolhatnak. A Java nyelv támogatja a primitív változókat és a referencia változókat.</string>
+    <string name="TV_12">Primitív változók: Ezek olyan alapvető adattípusok, amelyeket közvetlenül a memóriában tárolnak, és azok értékei közvetlenül az értékük. Például:</string>
+    <string name="TV_13">int: egész számokat tárol, például: int age = 25;</string>
+    <string name="TV_14">double: lebegőpontos számokat tárol, például: double pi = 3.14;</string>
+    <string name="TV_15">boolean: logikai értéket tárol (true vagy false), például: boolean isJavaFun = true;</string>
+    <string name="TV_16">char: egyetlen karaktert tárol Unicode formátumban, például: char grade = \'A\';</string>
+    <string name="TV_17">Referencia változók: Ezek olyan változók, amelyek egy objektumra vagy tömbre mutatnak a memóriában. Az objektumok és tömbök tényleges adatokat és műveleteket tárolnak. Például:</string>
+    <string name="TV_18">String: karakterláncokat tárol, például: String name = John;</string>
+    <string name="TV_19">Object: az ősosztály, amelyből minden más osztály származik, például: Object obj = new Object();</string>
 </resources>
