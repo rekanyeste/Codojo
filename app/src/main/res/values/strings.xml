@@ -64,4 +64,13 @@
     <string name="classes">Osztályok</string>
     <string name="type">Típuskonverziók</string>
     <string name="finalQuiz">Java összegző kvíz</string>
+    <string name="intro00">Bevezetés</string>
+    <string name="TV_01">A Java egy rendkívül sokoldalú és népszerű programozási nyelv, amely széles körben használatos szoftverfejlesztésben, webalkalmazásokban, mobilalkalmazásokban és sok más területen. A Java egy erőteljes eszköz a fejlesztők számára, mivel lehetővé teszi az objektumorientált programozás előnyeinek kihasználását, egyszerűen kezelhető, és a Java alkalmazások szinte minden platformon futtathatók. Ez a bevezető arra fog összpontosítani, hogy megismertesse Önt a Java nyelv alapjaival és a programozás alapvető fogalmaival.</string>
+    <string name="whatsJavaIs">Mi is pontosan a Java?</string>
+    <string name="TV_02">A Java egy objektumorientált programozási nyelv, amelyet eredetileg a Sun Microsystems (később felvásárolta az Oracle Corporation) fejlesztett ki az 1990-es évek elején. Azóta a Java számos verziót és fejlesztést ért meg, amelyeknek köszönhetően a nyelv folyamatosan fejlődik és a fejlesztői igényekhez igazodik. A Java nyelvet általában az: egyszer írd meg, hogy futtathasd bárhol jelmondat jellemezte, mivel a Java alkalmazásokat Java virtuális gépen (JVM) futtatják, ami lehetővé teszi azok futtatását különböző platformokon anélkül, hogy szükség lenne a forráskód újrafordítására.</string>
+    <string name="Synthax">Nyelvi elemek Javában</string>
+    <string name="TV_03">A Java nyelv alapjait különböző fogalmak alkotják, például változók, adatszerkezetek, vezérlési szerkezetek, metódusok stb. Ezek az elemek építőkövei a Java programoknak, és azok megértése elengedhetetlen ahhoz, hogy hatékonyan tudjunk kódolni Java-ban. A változók tárolják az adatokat, az adatszerkezetek segítségével csoportosíthatjuk ezeket az adatokat, a vezérlési szerkezetek irányítják a program folyamatát, a metódusok pedig az újrafelhasználható kód részei.</string>
+    <string name="OOPJava">Objektumorientált programozás alapjai</string>
+    <string name="TV_04">Az objektumorientált programozás (OOP) alapvető elvei közé tartozik az öröklődés, az absztrakció, az egységbezárás és a sokalakúság. Ezek az elvek lehetővé teszik a programok moduláris tervezését, a kód újrafelhasználhatóságát és a fejlesztési folyamat hatékonyságát. A Java szorosan követi az OOP elveit, és lehetőséget biztosít osztályok és objektumok létrehozására, öröklődésre vagy interfészek implementálására is.</string>
+    <string name="backToJavaCourseList">Vissza</string>
 </resources>

@@ -6,15 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class JavaCourseListActivity extends AppCompatActivity {
 
     Button homePage, backToChoseCourse;
+    TextView introduction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_course_list);
 
+        introduction = findViewById(R.id.introJava);
         homePage = findViewById(R.id.backToHome);
         backToChoseCourse = findViewById(R.id.backToCourses);
 
@@ -30,6 +33,14 @@ public class JavaCourseListActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(JavaCourseListActivity.this, QuizActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        introduction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_00_IntroductionActivity.class);
                 startActivity(intent);
                 finish();
             }

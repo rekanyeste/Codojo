@@ -16,6 +16,12 @@
         android:theme="@style/Theme.Codojo"
         tools:targetApi="31">
         <activity
+            android:name=".JavaCourse_01_VariablesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JavaCourse_00_IntroductionActivity"
+            android:exported="false" />
+        <activity
             android:name=".CSharpCourseListActivity"
             android:exported="false" />
         <activity
