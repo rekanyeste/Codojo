@@ -138,4 +138,6 @@
     <string name="do_while_ciklus">do-while ciklus:</string>
     <string name="dowhile">A do-while ciklus nagyon hasonlít a while ciklushoz, de legalább egyszer lefut, még akkor is, ha a feltétel az első alkalommal hamis. Ezután minden iteráció előtt ellenőrzi a feltételt, és csak akkor folytatódik, ha a feltétel igaz. Hátul-tesztelő ciklusnak is szokták hívni.</string>
     <string name="loop_vegszo">Ezek az elágazások és ciklusok fontos építőkövei a Java programozásnak, és lehetővé teszik a programok számára, hogy dinamikusan válasszanak különböző utakat és ismételjék meg a kódot bizonyos feltételek teljesülése esetén.</string>
+    <string name="loops03">3. kvíz: Elágazások, ciklusok</string>
+    <string name="arrays_">Tömbök</string>
 </resources>
