@@ -83,4 +83,8 @@
     <string name="TV_17">Referencia változók: Ezek olyan változók, amelyek egy objektumra vagy tömbre mutatnak a memóriában. Az objektumok és tömbök tényleges adatokat és műveleteket tárolnak. Például:</string>
     <string name="TV_18">String: karakterláncokat tárol, például: String name = John;</string>
     <string name="TV_19">Object: az ősosztály, amelyből minden más osztály származik, például: Object obj = new Object();</string>
+    <string name="inic">Változók deklarálása és inicializálása</string>
+    <string name="TV_20"><![CDATA[A változókat deklarálni kell, mielőtt használnánk őket. A deklaráció a változó típusának és nevének meghatározását jelenti. Például: int age; <- ez egy deklaráció]]></string>
+    <string name="TV_21"><![CDATA[Inicializálni kell a változókat, mielőtt értéküket elérnénk. Ez azt jelenti, hogy értéket adunk nekik a memóriában. Például: age = 25; <- ez egy inicializáció (értékadás)]]></string>
+    <string name="age">Ezután az age változó 25 értéket fog tárolni.</string>
 </resources>
