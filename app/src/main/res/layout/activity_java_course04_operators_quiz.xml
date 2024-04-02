@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="40sp"
         android:id="@+id/variablesQuizNr1"
         >
     </TextView>
@@ -30,7 +30,7 @@
         android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="50sp"
         android:id="@+id/questionVariables02"
         >
     </TextView>
@@ -95,7 +95,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/relativeOperators"
         android:layout_marginStart="145dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/back"
         android:textColor="@color/white"
@@ -108,7 +108,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/backToJavaList03"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/loops"
         android:textColor="@color/white"
