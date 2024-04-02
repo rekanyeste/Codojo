@@ -140,4 +140,25 @@
     <string name="loop_vegszo">Ezek az elágazások és ciklusok fontos építőkövei a Java programozásnak, és lehetővé teszik a programok számára, hogy dinamikusan válasszanak különböző utakat és ismételjék meg a kódot bizonyos feltételek teljesülése esetén.</string>
     <string name="loops03">3. kvíz: Elágazások, ciklusok</string>
     <string name="arrays_">Tömbök</string>
+    <string name="arrays01">Adatszerkezetek</string>
+    <string name="TV_50">Az adatszerkezetek az adatok szervezésére szolgáló mechanizmusok, amelyek lehetővé teszik az adatok hatékony kezelését, tárolását és manipulálását. A Java nyelv számos beépített adatszerkezetet tartalmaz, amelyek közül néhány alapvető és gyakran használt adatszerkezet a következők:</string>
+    <string name="arrays03">1. Tömbök (Arrays):</string>
+    <string name="tombok">A tömb egy olyan adatszerkezet, amely több azonos típusú elemet tárol egy sorban vagy többdimenziós struktúrában. A tömbök fix méretűek, és az elemek indexek segítségével hozzáférhetők.</string>
+    <string name="declareTomb">Tömb deklarálása és inicializálása: int[] numbers = new int[5];</string>
+    <string name="tomb01">int[] numbers = new int[5];</string>
+    <string name="list01">2. Listák (List):</string>
+    <string name="TV_51">A lista dinamikusan változó méretű adatszerkezet, amely az elemek sorrendjét tartja nyilván. A Java-ban a java.util.List interfész számos implementációt kínál, például az ArrayList vagy a LinkedList.</string>
+    <string name="declareList"><![CDATA[List<String> names = new ArrayList<>();]]></string>
+    <string name="halmazok">3. Halmazok (Set):</string>
+    <string name="sets">A halmaz egy olyan adatszerkezet, amely egyedi elemeket tartalmaz, és nem engedi meg a duplikált elemeket. A java.util.Set interfész számos implementációt kínál, például a HashSet vagy a TreeSet.</string>
+    <string name="declareSet"><![CDATA[Set<Integer> uniqueNumbers = new HashSet<>();]]></string>
+    <string name="maps">4. Térkép (Map):</string>
+    <string name="maps2">A térkép egy kulcs-érték párok halmaza, ahol a kulcsok egyediek, és minden kulcshoz egy érték tartozik. A java.util.Map interfész számos implementációt kínál, például a HashMap vagy a TreeMap.</string>
+    <string name="declareMap"><![CDATA[Map<String, Integer> ages = new HashMap<>();]]></string>
+    <string name="stack">5. Verem (Stack):</string>
+    <string name="lifo">A verem egy LIFO (Last In, First Out) elven működő adatszerkezet, ahol a legutoljára hozzáadott elemet először távolítják el. A Java-ban a vermeket a java.util.Stack osztály képviseli.</string>
+    <string name="declareStack"><![CDATA[Stack<Integer> stack = new Stack<>();]]></string>
+    <string name="queue">6. Várak (Queue):</string>
+    <string name="fifo">A várak egy FIFO (First In, First Out) elven működő adatszerkezetek, ahol az elsőként hozzáadott elemet először távolítják el. A Java-ban a várakat a java.util.Queue interfész számos implementációja képviseli, például a LinkedList vagy a PriorityQueue.</string>
+    <string name="declareQueue"><![CDATA[Queue<String> queue = new LinkedList<>();]]></string>
 </resources>
