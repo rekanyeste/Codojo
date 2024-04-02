@@ -95,4 +95,29 @@
     <string name="fourthOptionVar">Negyedik válasz</string>
     <string name="score">Elért pontszám:</string>
     <string name="tryAgain">Próbáld újra!</string>
+    <string name="python">Python</string>
+    <string name="operatorsjav">Operátorok</string>
+    <string name="TV_30">Az operátorok a Java nyelvben olyan speciális szimbólumok, amelyek segítségével műveleteket hajtunk végre változókon és értékeken. Az operátorok lehetnek aritmetikai, összehasonlító, logikai és bitenkénti műveleteket végzők, és lehetnek egy vagy több operandusuk.</string>
+    <string name="arithmetic">1. Aritmetikai operátorok</string>
+    <string name="plus">Összeadás (+): Két érték összeadása.</string>
+    <string name="minus">Kivonás (-): Egy értékből kivonunk egy másikat.</string>
+    <string name="multiply">Szorzás (*): Két érték szorzata.</string>
+    <string name="divide">Osztás (/): Egy értéket osztunk egy másikkal.</string>
+    <string name="divide02">Maradékos osztás (%): Két érték maradékos osztása.</string>
+    <string name="hasonlit">2. Összehasonlító operátorok:</string>
+    <string name="equal">Egyenlőség (==): Két érték egyenlőségének ellenőrzése.</string>
+    <string name="notequal">Nem egyenlőség (!=): Két érték különbözőségének ellenőrzése.</string>
+    <string name="restofoperators"><![CDATA[Nagyobb (>), Kisebb (<), Nagyobb vagy egyenlő (>=), Kisebb vagy egyenlő (<=): Értékek közötti összehasonlítás.]]></string>
+    <string name="logic">3. Logikai operátorok:</string>
+    <string name="and"><![CDATA[És (&&): Logikai ÉS művelet, mindkét feltételnek igaznak kell lennie.]]></string>
+    <string name="or">Vagy (||): Logikai VAGY művelet, legalább az egyik feltétel igaznak kell lennie.</string>
+    <string name="negation">Nem (!): Logikai NEGÁCIÓ, egy feltétel ellentettjét adja meg.</string>
+    <string name="bitenkent">4. Bitenkénti operátorok</string>
+    <string name="bitAnd"><![CDATA[És (&): Bitenkénti ÉS művelet.]]></string>
+    <string name="bitOR">Vagy (|): Bitenkénti VAGY művelet.</string>
+    <string name="bitXOR">XOR (^): Bitenkénti KIZÁRÓ VAGY művelet.</string>
+    <string name="eltolas"><![CDATA[Balra/megfelelően eltolás (<<, >>): A bináris szám biteinek balra vagy jobbra történő eltolása.]]></string>
+    <string name="plusAndMinus">5. Hozzáadási és kivonási operátorok:</string>
+    <string name="plsuegyenlo">Hozzáadás és értékadás (+=): Az operandusok összeadása és az eredmény értékének hozzáadása a bal oldali operandushoz.</string>
+    <string name="minusegyenlo">Kivonás és értékadás (-=): Az operandusok kivonása és az eredmény értékének levonása a bal oldali operandusból.</string>
 </resources>

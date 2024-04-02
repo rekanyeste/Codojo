@@ -9,29 +9,23 @@ import android.widget.Button;
 
 public class QuizActivity extends AppCompatActivity {
 
-    Button buttonJava, buttonCSharp;
+    Button buttonJava, buttonPython;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
         buttonJava = findViewById(R.id.btnCourseJava);
-        buttonJava.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this, JavaCourseListActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        buttonJava.setOnClickListener(view -> {
+            Intent intent = new Intent(QuizActivity.this, JavaCourseListActivity.class);
+            startActivity(intent);
+            finish();
         });
-        buttonCSharp = findViewById(R.id.btnCourseCSharp);
-        buttonCSharp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this, CSharpCourseListActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        buttonPython = findViewById(R.id.btnCoursePython);
+        buttonPython.setOnClickListener(view -> {
+            Intent intent = new Intent(QuizActivity.this, PythonCourseListActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }
