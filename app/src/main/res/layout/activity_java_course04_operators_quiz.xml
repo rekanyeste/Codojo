@@ -1,9 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".JavaCourse_04_OperatorsQuizActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/operators"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/variablesQuizNr1"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/variablesQuizNr1"
+        android:text="@string/question"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/questionVariables02"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/valasz01Variables02"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/questionVariables02"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/firstOptionVar"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/valasz01Variables02"
+        android:id="@+id/valasz02Variables02"
+        android:text="@string/secondOptionVar"
+        android:fontFamily="@font/aldrich"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        >
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/valasz02Variables02"
+        android:id="@+id/valasz03Variables02"
+        android:text="@string/thirdOptionVar"
+        android:fontFamily="@font/aldrich"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        >
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/valasz03Variables02"
+        android:id="@+id/valasz04Variables02"
+        android:text="@string/fourthOptionVar"
+        android:fontFamily="@font/aldrich"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="30dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/backToJavaList03"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/valasz04Variables02"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        app:icon="?attr/homeAsUpIndicator" />
+
+    <Button
+        android:id="@+id/nextToLoops"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/backToJavaList03"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/loops"
+        android:textColor="@color/white"
+        app:icon="@drawable/iconnext" />
+
+</RelativeLayout>

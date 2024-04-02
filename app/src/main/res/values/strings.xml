@@ -120,4 +120,6 @@
     <string name="plusAndMinus">5. Hozzáadási és kivonási operátorok:</string>
     <string name="plsuegyenlo">Hozzáadás és értékadás (+=): Az operandusok összeadása és az eredmény értékének hozzáadása a bal oldali operandushoz.</string>
     <string name="minusegyenlo">Kivonás és értékadás (-=): Az operandusok kivonása és az eredmény értékének levonása a bal oldali operandusból.</string>
+    <string name="loops">Elágazások</string>
+    <string name="operators">2. kvíz: Operátorok</string>
 </resources>
