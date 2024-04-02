@@ -74,7 +74,7 @@ public class JavaCourse_06_LoopsQuizActivity extends AppCompatActivity {
             dataToViews(pozicio);
         });
         btnNextArrays.setOnClickListener(view -> {
-            Intent intent = new Intent(JavaCourse_06_LoopsQuizActivity.this, JavaCourse_05_LoopsActivity.class);
+            Intent intent = new Intent(JavaCourse_06_LoopsQuizActivity.this, JavaCourse_07_ArraysActivity.class);
             startActivity(intent);
             finish();
         });
