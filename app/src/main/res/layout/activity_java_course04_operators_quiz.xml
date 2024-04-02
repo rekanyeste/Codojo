@@ -34,64 +34,66 @@
         android:id="@+id/questionVariables02"
         >
     </TextView>
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeOperators"
+    android:layout_below="@id/questionVariables02"
+    >
     <Button
         android:id="@+id/valasz01Variables02"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_below="@id/questionVariables02"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/firstOptionVar"
         android:textAllCaps="false"
         android:textSize="18sp" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/valasz01Variables02"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/valasz02Variables02"
         android:text="@string/secondOptionVar"
         android:fontFamily="@font/aldrich"
         android:textSize="18sp"
         android:textAllCaps="false"
-        >
-    </Button>
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/valasz02Variables02"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/valasz03Variables02"
         android:text="@string/thirdOptionVar"
         android:fontFamily="@font/aldrich"
         android:textSize="18sp"
         android:textAllCaps="false"
-        >
-    </Button>
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/valasz03Variables02"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/valasz04Variables02"
         android:text="@string/fourthOptionVar"
         android:fontFamily="@font/aldrich"
         android:textSize="18sp"
         android:textAllCaps="false"
         android:layout_marginBottom="30dp"
-        >
-    </Button>
+        />
+</RelativeLayout>
+
 
     <Button
         android:id="@+id/backToJavaList03"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_below="@+id/valasz04Variables02"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeOperators"
         android:layout_marginStart="145dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/aldrich"
@@ -103,6 +105,7 @@
         android:id="@+id/nextToLoops"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/backToJavaList03"
         android:layout_marginStart="130dp"
         android:layout_marginTop="5dp"
