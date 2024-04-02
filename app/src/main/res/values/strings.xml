@@ -87,4 +87,12 @@
     <string name="TV_20"><![CDATA[A változókat deklarálni kell, mielőtt használnánk őket. A deklaráció a változó típusának és nevének meghatározását jelenti. Például: int age; <- ez egy deklaráció]]></string>
     <string name="TV_21"><![CDATA[Inicializálni kell a változókat, mielőtt értéküket elérnénk. Ez azt jelenti, hogy értéket adunk nekik a memóriában. Például: age = 25; <- ez egy inicializáció (értékadás)]]></string>
     <string name="age">Ezután az age változó 25 értéket fog tárolni.</string>
+    <string name="nrOneQuiz">1. kvíz: Változók</string>
+    <string name="question">Kérdés</string>
+    <string name="firstOptionVar">Első válasz</string>
+    <string name="secondOptionVar">Második válasz</string>
+    <string name="thirdOptionVar">Harmadik válasz</string>
+    <string name="fourthOptionVar">Negyedik válasz</string>
+    <string name="score">Elért pontszám:</string>
+    <string name="tryAgain">Próbáld újra!</string>
 </resources>

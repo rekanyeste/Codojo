@@ -16,22 +16,15 @@ public class JavaCourse_01_VariablesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_java_course01_variables);
 
         btnBack = findViewById(R.id.btnBackJavaCourseList01);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(JavaCourse_01_VariablesActivity.this, JavaCourseListActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        btnBack.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_01_VariablesActivity.this, JavaCourseListActivity.class);
+            startActivity(intent);
+            finish();
         });
-        btnNextToQuizVariables = findViewById(R.id.btnNextCourseJava01Quiz);
-        btnNextToQuizVariables.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(JavaCourse_01_VariablesActivity.this, JavaCourse_02_VariablesQuizActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        btnNextToQuizVariables = findViewById(R.id.btnNextCourseJava01);
+        btnNextToQuizVariables.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_01_VariablesActivity.this, JavaCourse_02_VariablesQuizActivity.class);
+            startActivity(intent);
         });
     }
 }
