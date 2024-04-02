@@ -93,10 +93,22 @@
         android:layout_height="50dp"
         android:layout_below="@+id/valasz04Variables"
         android:layout_marginStart="145dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/aldrich"
         android:text="@string/back"
         android:textColor="@color/white"
         app:icon="?attr/homeAsUpIndicator" />
+
+    <Button
+        android:id="@+id/nextToOperators"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/backToJavaList"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/operatorsJava"
+        android:textColor="@color/white"
+        app:icon="@drawable/iconnext" />
 
 </RelativeLayout>

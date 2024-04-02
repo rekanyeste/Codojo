@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class JavaCourseListActivity extends AppCompatActivity {
 
     Button homePage, backToChoseCourse;
-    TextView introduction, variables, variablesQuiz;
+    TextView introduction, variables, variablesQuiz, operators;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,7 @@ public class JavaCourseListActivity extends AppCompatActivity {
         backToChoseCourse = findViewById(R.id.backToCourses);
         variables = findViewById(R.id.variablesJava);
         variablesQuiz = findViewById(R.id.varQuizJava);
+        operators = findViewById(R.id.operatorsJava);
 
         homePage.setOnClickListener(view -> {
             Intent intent = new Intent(JavaCourseListActivity.this, MainActivity.class);
@@ -45,6 +46,11 @@ public class JavaCourseListActivity extends AppCompatActivity {
         });
         variablesQuiz.setOnClickListener(view -> {
             Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_02_VariablesQuizActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        operators.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_03_OperatorsActivity.class);
             startActivity(intent);
             finish();
         });

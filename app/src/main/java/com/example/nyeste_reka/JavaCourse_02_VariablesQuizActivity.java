@@ -18,7 +18,7 @@ import java.util.Random;
 public class JavaCourse_02_VariablesQuizActivity extends AppCompatActivity {
 
     TextView question;
-    Button valasz1, valasz2, valasz3, valasz4, btnBack;
+    Button valasz1, valasz2, valasz3, valasz4, btnBack, btnNextOp;
     ArrayList<Quizzes> kvizLista;
     Random rnd;
     int pontszam, probalkozas, pozicio;
@@ -27,6 +27,7 @@ public class JavaCourse_02_VariablesQuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_course02_variables_quiz);
 
+        btnNextOp = findViewById(R.id.nextToOperators);
         btnBack = findViewById(R.id.backToJavaList);
         question = findViewById(R.id.questionVariables);
         valasz1 = findViewById(R.id.valasz01Variables);
@@ -73,6 +74,11 @@ public class JavaCourse_02_VariablesQuizActivity extends AppCompatActivity {
         });
         btnBack.setOnClickListener(view -> {
             Intent intent = new Intent(JavaCourse_02_VariablesQuizActivity.this, JavaCourseListActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        btnNextOp.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_02_VariablesQuizActivity.this, JavaCourse_03_OperatorsActivity.class);
             startActivity(intent);
             finish();
         });
