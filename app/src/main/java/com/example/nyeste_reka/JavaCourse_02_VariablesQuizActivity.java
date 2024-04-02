@@ -2,6 +2,7 @@ package com.example.nyeste_reka;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,7 @@ import java.util.Random;
 public class JavaCourse_02_VariablesQuizActivity extends AppCompatActivity {
 
     TextView question;
-    Button valasz1, valasz2, valasz3, valasz4;
+    Button valasz1, valasz2, valasz3, valasz4, btnBack;
     ArrayList<Quizzes> kvizLista;
     Random rnd;
     int pontszam, probalkozas, pozicio;
@@ -26,6 +27,7 @@ public class JavaCourse_02_VariablesQuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_course02_variables_quiz);
 
+        btnBack = findViewById(R.id.backToJavaList);
         question = findViewById(R.id.questionVariables);
         valasz1 = findViewById(R.id.valasz01Variables);
         valasz2 = findViewById(R.id.valasz02Variables);
@@ -69,7 +71,11 @@ public class JavaCourse_02_VariablesQuizActivity extends AppCompatActivity {
             pozicio = rnd.nextInt(kvizLista.size());
             dataToViews(pozicio);
         });
-
+        btnBack.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_02_VariablesQuizActivity.this, JavaCourseListActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
     private void pontszamAlul(){
@@ -106,5 +112,6 @@ public class JavaCourse_02_VariablesQuizActivity extends AppCompatActivity {
         kvizKerdesek.add(new Quizzes("Melyik deklaráció a helyes?","int 25;", "boolean true;", "char c;", "double 3.14;", "char c;"));
         kvizKerdesek.add(new Quizzes("Melyik típus tárol lebegőpontos számokat?","int", "double", "String", "Object", "double"));
         kvizKerdesek.add(new Quizzes("Melyik deklarálás és inicializálás a helytelen?","boolean = true;", "int életkor = 25;", "char c = 'B'", "double szám = 5.98;", "boolean = true;"));
+        kvizKerdesek.add(new Quizzes("Hogy hívják azt a típust, amelyik karakterláncokat tárol?","double", "Object", "int", "String", "String"));
     }
 }

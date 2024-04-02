@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class JavaCourseListActivity extends AppCompatActivity {
 
     Button homePage, backToChoseCourse;
-    TextView introduction;
+    TextView introduction, variables, variablesQuiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,30 +20,33 @@ public class JavaCourseListActivity extends AppCompatActivity {
         introduction = findViewById(R.id.introJava);
         homePage = findViewById(R.id.backToHome);
         backToChoseCourse = findViewById(R.id.backToCourses);
+        variables = findViewById(R.id.variablesJava);
+        variablesQuiz = findViewById(R.id.varQuizJava);
 
-        homePage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(JavaCourseListActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        homePage.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourseListActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
-        backToChoseCourse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(JavaCourseListActivity.this, QuizActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        backToChoseCourse.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourseListActivity.this, QuizActivity.class);
+            startActivity(intent);
+            finish();
         });
-        introduction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_00_IntroductionActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        introduction.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_00_IntroductionActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        variables.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_01_VariablesActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        variablesQuiz.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_02_VariablesQuizActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }
