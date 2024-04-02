@@ -161,4 +161,5 @@
     <string name="queue">6. Várak (Queue):</string>
     <string name="fifo">A várak egy FIFO (First In, First Out) elven működő adatszerkezetek, ahol az elsőként hozzáadott elemet először távolítják el. A Java-ban a várakat a java.util.Queue interfész számos implementációja képviseli, például a LinkedList vagy a PriorityQueue.</string>
     <string name="declareQueue"><![CDATA[Queue<String> queue = new LinkedList<>();]]></string>
+    <string name="arraysTV">4. kvíz: Adatszerkezetek</string>
 </resources>
