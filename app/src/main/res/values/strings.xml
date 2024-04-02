@@ -122,4 +122,20 @@
     <string name="minusegyenlo">Kivonás és értékadás (-=): Az operandusok kivonása és az eredmény értékének levonása a bal oldali operandusból.</string>
     <string name="loops">Elágazások</string>
     <string name="operators">2. kvíz: Operátorok</string>
+    <string name="loopsTV">Elágazások, ciklusok</string>
+    <string name="elagazas">1. Elágazások</string>
+    <string name="TV_40">Az elágazások olyan vezérlési szerkezetek, amelyek segítségével a program különböző útvonalakat követhet a futása során a feltételek függvényében. Az elágazások a program számára lehetőséget adnak arra, hogy dinamikusan döntsön a különböző feltételek teljesülése esetén.</string>
+    <string name="if_else_">if-else utasítás:</string>
+    <string name="TV_41">Az if-else utasítás segítségével egy feltételt vizsgálunk meg, és a feltétel igazságától függően különböző műveleteket hajtunk végre. Ha a feltétel igaz, akkor az if ág fut, ellenkező esetben az else ág fut. Ez lehetővé teszi a program számára, hogy különböző utasításokat hajtson végre különböző körülmények között.</string>
+    <string name="switch_case">switch-case utasítás:</string>
+    <string name="TV_42">A switch-case utasítás lehetőséget ad arra, hogy egy változó értékét több különböző esetben vizsgáljuk meg. Minden esetben meghatározott műveleteket hajtunk végre, amelyek az adott esetnek megfelelnek. A switch-case utasítás alternatívákat kínál az egyes értékek kezelésére, és több esetben is végre tudja hajtani ugyanazt a műveletet.</string>
+    <string name="loop">2. Ciklusok:</string>
+    <string name="TV_43">A ciklusok olyan vezérlési szerkezetek, amelyek segítségével a program ismételten hajthat végre egy adott műveletsort, amíg egy bizonyos feltétel teljesül.</string>
+    <string name="forLoop">for ciklus:</string>
+    <string name="TV_44">A for ciklus általában egy számlálóval rendelkezik, amelyet kezdetben inicializálunk, majd az iterációk során növelünk vagy csökkentünk. A for ciklus addig ismétli a kódot, amíg a megadott feltétel igaz, majd kilép a ciklusból, amikor a feltétel hamis lesz.</string>
+    <string name="while_ciklus">while ciklus:</string>
+    <string name="while_loop">A while ciklus csak akkor hajtja végre a kódot, ha a megadott feltétel igaz. A ciklus minden egyes iterációja előtt újra ellenőrzi a feltételt, és csak akkor folytatódik, ha a feltétel igaz marad. Amikor a feltétel hamis lesz, a ciklus megszakad.</string>
+    <string name="do_while_ciklus">do-while ciklus:</string>
+    <string name="dowhile">A do-while ciklus nagyon hasonlít a while ciklushoz, de legalább egyszer lefut, még akkor is, ha a feltétel az első alkalommal hamis. Ezután minden iteráció előtt ellenőrzi a feltételt, és csak akkor folytatódik, ha a feltétel igaz. Hátul-tesztelő ciklusnak is szokták hívni.</string>
+    <string name="loop_vegszo">Ezek az elágazások és ciklusok fontos építőkövei a Java programozásnak, és lehetővé teszik a programok számára, hogy dinamikusan válasszanak különböző utakat és ismételjék meg a kódot bizonyos feltételek teljesülése esetén.</string>
 </resources>

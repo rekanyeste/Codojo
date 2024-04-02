@@ -2,6 +2,7 @@ package com.example.nyeste_reka;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,7 @@ import java.util.Random;
 public class JavaCourse_04_OperatorsQuizActivity extends AppCompatActivity {
 
     TextView question02;
-    Button valasz1_02, valasz2_02, valasz3_02, valasz4_02, btnBack, btnNextOp;
+    Button valasz1_02, valasz2_02, valasz3_02, valasz4_02, btnBack, btnNextLoop;
     ArrayList<Quizzes> kvizLista;
     Random rnd;
     int pontszam, probalkozas, pozicio;
@@ -26,6 +27,8 @@ public class JavaCourse_04_OperatorsQuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_course04_operators_quiz);
 
+        btnBack = findViewById(R.id.backToJavaList03);
+        btnNextLoop = findViewById(R.id.nextToLoops);
         question02 = findViewById(R.id.questionVariables02);
         valasz1_02 = findViewById(R.id.valasz01Variables02);
         valasz2_02 = findViewById(R.id.valasz02Variables02);
@@ -68,6 +71,16 @@ public class JavaCourse_04_OperatorsQuizActivity extends AppCompatActivity {
             probalkozas++;
             pozicio = rnd.nextInt(kvizLista.size());
             dataToViews(pozicio);
+        });
+        btnNextLoop.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_04_OperatorsQuizActivity.this, JavaCourse_05_LoopsActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        btnBack.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_04_OperatorsQuizActivity.this, JavaCourseListActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
     private void pontszamAlul(){
