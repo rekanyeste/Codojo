@@ -270,4 +270,16 @@
     <string name="muveletekPython">Elemek hozzáadása: append(), add() \nElemek eltávolítása: remove(), pop(), discard() \nElemek hozzáférése: Indexelés vagy kulcs alapján \nAdatszerkezetek összehasonlítása: ==, != \nHalmazműveletek: Unió, metszet, különbség stb.</string>
     <string name="regexPy">Szövegkezelés</string>
     <string name="listsPy">Listák</string>
+    <string name="regex">Szövegkezelés és reguláris kifejezések</string>
+    <string name="literalsPy">1. Szövegliterálok</string>
+    <string name="literalokPy">Pythonban a szövegeket idézőjelben vagy aposztróffal deklarálhatjuk. A szövegek az alapvető adattípusok közé tartoznak.</string>
+    <string name="stringsPy">2. Szövegműveletek:</string>
+    <string name="concatPy">A szövegeket számos beépített művelettel és metódussal lehet manipulálni, például: összefűzés, hossz lekérdezése stb.</string>
+    <string name="regexPython">3. Reguláris kifejezések:</string>
+    <string name="regexPython1">A reguláris kifejezések olyan mintázatok, amelyekkel szöveges adatokban lehet keresni, illeszteni vagy módosítani. A re modul segítségével kezelhetünk reguláris kifejezéseket.</string>
+    <string name="regexOutputPy">Ez a kód az alábbi kimenetet eredményezi: [\'az alma\', \'a narancs\', \'a banan\']</string>
+    <string name="hasznositasRegexPy">4. Reguláris kifejezések hasznosítása:</string>
+    <string name="muveletRegexPy">re.match(): Ellenőrzi, hogy egy minta illeszkedik-e a szöveg elejéhez. \nre.search(): Keres egy mintát a szövegben, és visszaadja az első találatot. \nre.findall(): Visszaadja az összes találatot egy listában. \nre.sub(): Cseréli a találatokat egy másik szövegre.</string>
+    <string name="examplesRegexPy">5. Reguláris kifejezések példák:</string>
+    <string name="regexKifejezesekPy">[a-z]+: Illeszkedik az összes kisbetűs szóra. \nd{3}-d{2}-d{4}: Illeszkedik az amerikai formátumú telefonszámra (pl. 123-45-6789). \n^w+sw+$: Illeszkedik az első és a vezetéknevére együtt egy szövegben.</string>
 </resources>
