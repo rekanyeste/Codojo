@@ -209,4 +209,14 @@
     <string name="pythonSzoveg">Szövegkezelés és reguláris kifejezések</string>
     <string name="filePython">Fájlkezelés</string>
     <string name="finalQuizPy">Python összegző kvíz</string>
+    <string name="historyPy">A Python története:</string>
+    <string name="philosoPy">A filozófiája:</string>
+    <string name="elvekPy">A Python tervezése során alapvető fontosságú szempont volt a kód olvashatósága és egyszerűsége. Ennek megfelelően a Python közismert Pythonic filozófiája alapelvei közé tartozik a: Beautiful is better than ugly. (A szép jobb a csúnyánál.), Simple is better than complex. (Az egyszerű jobb a bonyolultnál.) elvek.</string>
+    <string name="history">Python egy magas szintű, interpretált, általános célú programozási nyelv, amelyet Guido van Rossum holland programozó tervezett és fejlesztett ki az 1980-as évek végén és az 1990-es évek elején. A nyelv nevét a brit Monty Python repülő cirkusz televíziós sorozatról kapta. Python első kiadása, a Python 0.9.0, 1991-ben jelent meg.</string>
+    <string name="jellemzok">Fontos jellemzők:</string>
+    <string name="easyness">Olvashatóság és egyszerűség: A Python egyszerű, átlátható szintaxisa és struktúrája könnyen olvasható kódot eredményez.</string>
+    <string name="dynamicPy">Dinamikus típusosság: A változók típusa dinamikusan változhat a futás során, ami nagyobb rugalmasságot biztosít a fejlesztőknek.</string>
+    <string name="paradigmPy">Többparadigmás: Python támogatja az objektumorientált, funkcionális és procedurális programozási paradigma egyes elemeit.</string>
+    <string name="sokoldalu">Sokoldalúság: Python alkalmazható sokféle területen, beleértve a webfejlesztést, adatelemzést, gépi tanulást, szoftverfejlesztést és sok más területet.</string>
+    <string name="syntaxBtn">Szintaxis</string>
 </resources>
