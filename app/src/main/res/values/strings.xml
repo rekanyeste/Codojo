@@ -202,4 +202,11 @@
     <string name="upAndDownCast">Az objektumorientált programozásban a típuskonverzió az osztályok közötti hierarchiákban is létezik. Például, ha egy szülőosztály referenciáját tároljuk egy gyermekosztály objektumára, akkor a típuskonverzió lehetőséget ad arra, hogy a szülőosztály referenciáját a gyermekosztály referenciájává alakítsuk, hogy a gyermekosztály specifikus metódusait elérjük. Ez az ún. upcasting és downcasting. Például:</string>
     <string name="finalJavaQuiz">Összegző Java kvíz</string>
     <string name="finalJava">Java összegés</string>
+    <string name="pythonCourses">Python kurzusok és kvízek</string>
+    <string name="synthaxPython">Alapok és a szintaxis</string>
+    <string name="methodsPython">Függvények és modulok</string>
+    <string name="pythonStructures">Adatszerkezetek</string>
+    <string name="pythonSzoveg">Szövegkezelés és reguláris kifejezések</string>
+    <string name="filePython">Fájlkezelés</string>
+    <string name="finalQuizPy">Python összegző kvíz</string>
 </resources>

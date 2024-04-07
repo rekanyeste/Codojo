@@ -1,9 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".PythonCourseListActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textPython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/pythonCourses"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/introPython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textPython"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="110sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginEnd="110sp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/intro"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/synPython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/introPython"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="60sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="60sp"
+                android:fontFamily="@font/aldrich"
+                android:foreground="@drawable/iconbookmini"
+                android:foregroundGravity="left|center"
+                android:text="@string/synthaxPython"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/methodsPython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/synPython"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="45sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="45sp"
+                android:fontFamily="@font/aldrich"
+                android:foreground="@drawable/iconbookmini"
+                android:foregroundGravity="left|center"
+                android:text="@string/methodsPython"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/structuresPython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/methodsPython"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="80sp"
+                android:fontFamily="@font/aldrich"
+                android:foreground="@drawable/iconbookmini"
+                android:foregroundGravity="left|center"
+                android:text="@string/pythonStructures"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/regularPython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/structuresPython"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/aldrich"
+                android:foreground="@drawable/iconbookmini"
+                android:foregroundGravity="left|center"
+                android:text="@string/pythonSzoveg"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/filePython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regularPython"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="110sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="110sp"
+                android:fontFamily="@font/aldrich"
+                android:foreground="@drawable/iconbookmini"
+                android:foregroundGravity="left|center"
+                android:text="@string/filePython"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/finalQuizPython"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filePython"
+                android:layout_marginStart="45sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginEnd="45sp"
+                android:fontFamily="@font/aldrich"
+                android:layout_centerHorizontal="true"
+                android:foreground="@drawable/iconquestion"
+                android:foregroundGravity="left|center"
+                android:text="@string/finalQuizPy"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/backToHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finalQuizPython"
+                android:layout_marginStart="240sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginEnd="40sp"
+                android:fontFamily="@font/aldrich"
+                android:foregroundGravity="center"
+                android:text="@string/home"
+                android:textColor="@color/white"
+                app:icon="@drawable/homepage" />
+
+            <Button
+                android:id="@+id/backToCourses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finalQuizPython"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginEnd="240sp"
+                android:fontFamily="@font/aldrich"
+                android:foregroundGravity="center"
+                android:text="@string/backCourse"
+                android:textColor="@color/white"
+                app:icon="?attr/actionModeCloseDrawable" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
