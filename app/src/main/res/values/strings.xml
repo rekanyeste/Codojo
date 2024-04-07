@@ -239,4 +239,20 @@
     <string name="forPy">For ciklus: Iterál egy adott iterálható objektumon (pl. lista, tuple) vagy egy szekvencián.</string>
     <string name="whilePy">While ciklus: Addig ismétel, amíg a megadott feltétel igaz.</string>
     <string name="nextModulesPy">Modulok</string>
+    <string name="funcPy">Függvények és modulok</string>
+    <string name="fuggvenyPy">1. Függvények:</string>
+    <string name="TV_20Py">A függvények olyan blokkok kódot jelentenek, amelyeket meghatározott műveletek végrehajtására terveztek, és amelyeket később újra felhasználhatunk. A függvények hasznosak a kód újrafelhasználhatóságának növelésében és az egész kód strukturálásában.</string>
+    <string name="greetPy">A fenti példában greet nevű függvényt definiálunk, amely egy nevet vár bemenetként, majd kiírja az üdvözlő üzenetet a megadott névvel.</string>
+    <string name="callFuncPy">2. Függvény meghívása:</string>
+    <string name="paramsPy">A függvény meghívása során megadjuk a függvény nevét, majd a zárójelek között megadjuk a szükséges bemeneti paramétereket.</string>
+    <string name="outputPy">Ez a kód a következő kimenetet eredményezi: Szia, Reka!</string>
+    <string name="modulesPy">3. Modulok:</string>
+    <string name="modulokPy">A modulok olyan fájlok, amik tartalmazhatnak Python kódot, melyeket más fájlokba, importálhatunk és felhasználhatunk. A modulok lehetővé teszik a kód újrafelhasználhatóságát és a projekt szervezettségét.</string>
+    <string name="greetingModulPy">Ebben a példában egy greeting.py nevű modult hoztunk létre, amely tartalmazza az előzőleg definiált udvozol függvényt.</string>
+    <string name="importPy">4. Modul importálása és használata:</string>
+    <string name="importPy2">Ez a kód a következő kimenetet eredményezi: Szia, Reka!</string>
+    <string name="importModulPy">Lehetőség van egy adott függvény importálására is a modulból:</string>
+    <string name="beepitettPy">5. Beépített modulok:</string>
+    <string name="beepitettModulokPy">A Python rendelkezik számos beépített modullal, amelyeket használhatunk különböző feladatok végrehajtásához, például a matematikai műveletekhez, a fájlkezeléshez, az időkezeléshez stb.</string>
+    <string name="negyzetgyokPy">Ebben a példában a math modult használjuk a négyzetgyök számítására.</string>
 </resources>
