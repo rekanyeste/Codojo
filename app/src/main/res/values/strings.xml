@@ -191,4 +191,14 @@
     <string name="inherit">5. Öröklődés:</string>
     <string name="inheritance">Az öröklődés lehetővé teszi egy osztály (a leszármazott osztály) számára, hogy örökölje egy másik osztály (a szülő osztály) tulajdonságait és metódusait. Ez a Java egyik alapvető objektumorientált tulajdonsága. Például:</string>
     <string name="typeNext">Típuskonverziók</string>
+    <string name="castingTV">Típuskonverziók</string>
+    <string name="kasztolas">A típuskonverziók (casting) a Java-ban az egyik legfontosabb technika, amely lehetővé teszi az adattípusok közötti átalakítást. Ez különösen hasznos, amikor az egyik adattípusból származó értéket egy másik adattípusba szeretnénk átkonvertálni.</string>
+    <string name="implicitType">1. Automatikus (implicit) típuskonverzió:</string>
+    <string name="automaticTypeConv">Az automatikus típuskonverzió akkor történik, amikor a kisebb tartományú adattípusból egy nagyobb tartományú adattípusba konvertálunk. Ez azért lehetséges, mert a céladattípus a forrásadattípus tartományát is képes kezelni anélkül, hogy adatvesztés lenne. Például:</string>
+    <string name="typeConvImplicit">Az automatikus típuskonverzió automatikusan történik, amikor a kisebb tartományú adattípusból egy nagyobb tartományú adattípusba konvertálunk. Ez azért lehetséges, mert a céladattípus a forrásadattípus tartományát is képes kezelni anélkül, hogy adatvesztés lenne.</string>
+    <string name="explicitTypeConv">2. Kényszerített (explicit) típuskonverzió:</string>
+    <string name="explConv">A kényszerített típuskonverzió során manuálisan megadjuk a konverziót, amikor az automatikus típuskonverzió nem elegendő vagy nem megfelelő. Ez gyakran fordul elő, amikor egy nagyobb tartományú adattípusból egy kisebb tartományú adattípusba próbálunk konvertálni. A kényszerített típuskonverzió potenciálisan adatvesztést okozhat, ha a céladattípus nem képes kezelni a forrásadattípus teljes tartományát.</string>
+    <string name="oopConv">3. Típuskonverzió az objektumorientált programozásban:</string>
+    <string name="upAndDownCast">Az objektumorientált programozásban a típuskonverzió az osztályok közötti hierarchiákban is létezik. Például, ha egy szülőosztály referenciáját tároljuk egy gyermekosztály objektumára, akkor a típuskonverzió lehetőséget ad arra, hogy a szülőosztály referenciáját a gyermekosztály referenciájává alakítsuk, hogy a gyermekosztály specifikus metódusait elérjük. Ez az ún. upcasting és downcasting. Például:</string>
+    <string name="finalJavaQuiz">Összegző Java kvíz</string>
 </resources>
