@@ -162,4 +162,18 @@
     <string name="fifo">A várak egy FIFO (First In, First Out) elven működő adatszerkezetek, ahol az elsőként hozzáadott elemet először távolítják el. A Java-ban a várakat a java.util.Queue interfész számos implementációja képviseli, például a LinkedList vagy a PriorityQueue.</string>
     <string name="declareQueue"><![CDATA[Queue<String> queue = new LinkedList<>();]]></string>
     <string name="arraysTV">4. kvíz: Adatszerkezetek</string>
+    <string name="TV_60">A metódusok (eljárások vagy függvények) olyan kódrészletek, amelyek egy adott feladatot hajtanak végre. A metódusok lehetővé teszik a kód újrafelhasználhatóságát, olvashatóságát és karbantarthatóságát, mivel ugyanazt a műveletet többször is meghívhatjuk anélkül, hogy ismételnénk a kódot.</string>
+    <string name="functionDeclare">1. Függvény deklarációja:</string>
+    <string name="function">A függvény deklarációja meghatározza a nevét, a visszatérési típust, a paraméterek listáját és a függvény törzsét (ami tartalmazza a kódot). Például:</string>
+    <string name="declareFunc">public int add(int a, int b) {return a + b;}</string>
+    <string name="methods1">Metódusok</string>
+    <string name="eljaras">2. Visszatérési érték:</string>
+    <string name="TV_62">A metódusok lehetnek olyanok, amelyek visszatérnek egy értékkel (ezeket hívjuk függvényeknek, mindig van visszatérési értékük és a return utasítás kötelező elemük) vagy olyanok, amelyeknek nincs visszatérési értéke, azaz az eljárások (void típussal). Például:</string>
+    <string name="declareEljaras">public void greet() {System.out.println(Hello!);}</string>
+    <string name="params">3. Paraméterek:</string>
+    <string name="params1">A metódusok paramétereket fogadhatnak, amelyek adatokat továbbíthatnak a metódusnak. A paraméterek típusát és nevét meg kell adni a metódus deklarációjában. Például:</string>
+    <string name="methodsCall">4. Metódus meghívása:</string>
+    <string name="TV_63">A metódusokat más kódrészletekből (pl.: a Main-ből) lehet meghívni a metódus nevének és a megfelelő argumentumok megadásával. Például:</string>
+    <string name="overload">Túlterhelés (overloading):</string>
+    <string name="TV_64">A Java támogatja a metódus túlterhelését, ami azt jelenti, hogy ugyanazt a metódusnevet több változatban is lehet definiálni, amelyek különböznek a paraméterek számától vagy típusától. Például:</string>
 </resources>
