@@ -2,35 +2,31 @@ package com.example.nyeste_reka;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class JavaCourse_09_MethodsActivity extends AppCompatActivity {
 
+    Button btnBack, btnMethodQuiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_course09_methods);
 
-        int szam = osszeAd(3, 5); // 8
-        kiiratas(); // "Hello!"
-        udvozol("Réka"); // "Hello, Réka!"
+        btnBack = findViewById(R.id.btnBackJavaCourseList09);
+        btnMethodQuiz= findViewById(R.id.btnNextCourseJava09);
 
-    }
-
-    public int osszeAd(int a, int b) {
-        return a + b;
-        //Függvény, ezért kötelező bele a return
-    }
-    public double osszeAd(double a, double b) {
-        return a + b;
-    }
-
-    public void kiiratas() {
-        System.out.println("Hello!");
-        //Eljárás, ezért nincs benne return utasítás
-    }
-    public void udvozol(String name) {
-        System.out.println("Hello, " + name + "!");
+        btnBack.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_09_MethodsActivity.this, JavaCourseListActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        btnMethodQuiz.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourse_09_MethodsActivity.this, JavaCourse_10_MethodsQuizActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
 }
