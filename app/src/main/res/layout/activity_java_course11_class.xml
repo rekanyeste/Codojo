@@ -239,7 +239,7 @@
             </TextView>
 
             <Button
-                android:id="@+id/btnBackJavaCourseList09"
+                android:id="@+id/btnBackJavaCourseList11"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_below="@+id/felsorolas14"
@@ -251,14 +251,14 @@
                 app:icon="?attr/homeAsUpIndicator" />
 
             <Button
-                android:id="@+id/btnNextCourseJava09"
+                android:id="@+id/btnNextType"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_below="@+id/felsorolas14"
                 android:layout_marginStart="180sp"
                 android:layout_marginEnd="40sp"
                 android:fontFamily="@font/aldrich"
-                android:text="@string/methodsQuiz"
+                android:text="@string/typeNext"
                 android:textColor="@color/white"
                 app:icon="@drawable/iconnext" />
         </RelativeLayout>

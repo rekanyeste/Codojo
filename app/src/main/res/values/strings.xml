@@ -190,4 +190,5 @@
     <string name="TV_70">Az osztály alapján objektumokat hozhatunk létre. Az objektumok példányosításával a memóriában helyet foglalunk az adatoknak és a metódusoknak. Például:</string>
     <string name="inherit">5. Öröklődés:</string>
     <string name="inheritance">Az öröklődés lehetővé teszi egy osztály (a leszármazott osztály) számára, hogy örökölje egy másik osztály (a szülő osztály) tulajdonságait és metódusait. Ez a Java egyik alapvető objektumorientált tulajdonsága. Például:</string>
+    <string name="typeNext">Típuskonverziók</string>
 </resources>
