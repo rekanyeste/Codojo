@@ -282,4 +282,19 @@
     <string name="muveletRegexPy">re.match(): Ellenőrzi, hogy egy minta illeszkedik-e a szöveg elejéhez. \nre.search(): Keres egy mintát a szövegben, és visszaadja az első találatot. \nre.findall(): Visszaadja az összes találatot egy listában. \nre.sub(): Cseréli a találatokat egy másik szövegre.</string>
     <string name="examplesRegexPy">5. Reguláris kifejezések példák:</string>
     <string name="regexKifejezesekPy">[a-z]+: Illeszkedik az összes kisbetűs szóra. \nd{3}-d{2}-d{4}: Illeszkedik az amerikai formátumú telefonszámra (pl. 123-45-6789). \n^w+sw+$: Illeszkedik az első és a vezetéknevére együtt egy szövegben.</string>
+    <string name="fajlkezelesPy">Fájlkezelés</string>
+    <string name="readPy">A fájlkezelés Pythonban az egyik legfontosabb tevékenység, amely lehetővé teszi a szöveges és bináris fájlok olvasását, írását és manipulálását.</string>
+    <string name="openFilePy">1. Fájl megnyitása:</string>
+    <string name="openFilePython">A fájlkezelés első lépése a fájl megnyitása, amelyet a open() függvénnyel tehetünk meg. A függvénynek meg kell adnunk a fájl elérési útvonalát és a megfelelő módját (pl. olvasás, írás, hozzáfűzés).</string>
+    <string name="readingPy">2. Fájl olvasása:</string>
+    <string name="readlinePy">A fájlokat a read() vagy readline() metódusok segítségével olvashatjuk. A read() az egész fájlt egyszerre olvassa be, míg a readline() soronként olvas.</string>
+    <string name="writePy">3. Fájl írása:</string>
+    <string name="writeMethodŐy">Az íráshoz a write() metódust használjuk, amelynek megadjuk a kiírandó szöveget.</string>
+    <string name="closePy">4. Fájl zárása:</string>
+    <string name="closePython">Fontos, hogy mindig zárjuk le a fájlokat a műveletek végén a close() metódussal, hogy felszabadítsuk a rendszer erőforrásait.</string>
+    <string name="withPy">5. Fájlkezelés with utasítással:</string>
+    <string name="withExeptionPy">Az with utasítás automatikusan lezárja a fájlokat még akkor is, ha kivétel keletkezik a kód végrehajtása közben.</string>
+    <string name="osModulePy">6. Fájlkezelés os modullal:</string>
+    <string name="osModulPy">Az os modul kényelmes módot biztosít a fájlok kezelésére, mint például fájlok létrehozása, törlése, átnevezése stb.</string>
+    <string name="finalQuizPy1">Összegző kvíz</string>
 </resources>
