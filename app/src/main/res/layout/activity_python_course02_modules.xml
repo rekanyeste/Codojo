@@ -300,7 +300,7 @@
         </TextView>
 
         <Button
-            android:id="@+id/backPythonCourseList01"
+            android:id="@+id/backPythonCourseList02"
             android:layout_width="130dp"
             android:layout_height="50dp"
             android:layout_below="@+id/felsorolas15"
@@ -313,7 +313,7 @@
             app:icon="?attr/actionModeCloseDrawable" />
 
         <Button
-            android:id="@+id/nextCoursePython01"
+            android:id="@+id/nextCoursePython02"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_below="@+id/felsorolas15"
@@ -321,7 +321,7 @@
             android:layout_marginEnd="40sp"
             android:layout_marginTop="20sp"
             android:fontFamily="@font/aldrich"
-            android:text="@string/nextModulesPy"
+            android:text="@string/adatszerkezetekPy"
             android:textColor="@color/white"
             app:icon="@drawable/iconnext" />
     </RelativeLayout>

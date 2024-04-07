@@ -255,4 +255,5 @@
     <string name="beepitettPy">5. Beépített modulok:</string>
     <string name="beepitettModulokPy">A Python rendelkezik számos beépített modullal, amelyeket használhatunk különböző feladatok végrehajtásához, például a matematikai műveletekhez, a fájlkezeléshez, az időkezeléshez stb.</string>
     <string name="negyzetgyokPy">Ebben a példában a math modult használjuk a négyzetgyök számítására.</string>
+    <string name="adatszerkezetekPy">Listák, tömbök</string>
 </resources>
