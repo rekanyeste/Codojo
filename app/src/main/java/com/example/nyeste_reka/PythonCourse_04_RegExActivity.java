@@ -14,8 +14,8 @@ public class PythonCourse_04_RegExActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python_course04_reg_ex);
 
-        btnBack = findViewById(R.id.backPythonCourseList03);
-        btnNextFile = findViewById(R.id.nextCoursePython03);
+        btnBack = findViewById(R.id.backPythonCourseList04);
+        btnNextFile = findViewById(R.id.nextCoursePython04);
 
         btnBack.setOnClickListener(view -> {
             Intent intent = new Intent(PythonCourse_04_RegExActivity.this, PythonCourseListActivity.class);
