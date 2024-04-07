@@ -256,4 +256,18 @@
     <string name="beepitettModulokPy">A Python rendelkezik számos beépített modullal, amelyeket használhatunk különböző feladatok végrehajtásához, például a matematikai műveletekhez, a fájlkezeléshez, az időkezeléshez stb.</string>
     <string name="negyzetgyokPy">Ebben a példában a math modult használjuk a négyzetgyök számítására.</string>
     <string name="adatszerkezetekPy">Listák, tömbök</string>
+    <string name="stPy">Adatszerkezetek</string>
+    <string name="manipulatePy">Az adatszerkezetek olyan eszközök, amelyek lehetővé teszik az adatok csoportosítását és szervezését különböző feladatokhoz. A Python többféle beépített adatszerkezetet kínál az adatok hatékony kezelésére és manipulálására.</string>
+    <string name="listPy">1. Listák:</string>
+    <string name="listPython">A lista egy rendszerezett, változtatható, több elemet tartalmazó adatszerkezet. A listák tetszőleges típusú elemeket is tartalmazhatnak, valamint indexálhatóak.</string>
+    <string name="tuplesPy">2. Tuple-ök:</string>
+    <string name="tuples">A tuple egy rendszerezett, nem változtatható, több elemet tartalmazó adatszerkezet. A tuple-ök tetszőleges típusú elemeket tartalmazhatnak, valamint indexálhatóak, de nem módosíthatóak.</string>
+    <string name="dictPy">3. Szótárak:</string>
+    <string name="dictionaryPy">A szótár egy kulcs-érték párokat tároló adatszerkezet, amely lehetővé teszi az elemek gyors hozzáférését a kulcs alapján.</string>
+    <string name="setsPy">4. Halmazok</string>
+    <string name="halmazPy">A halmaz egy egyedi elemekből álló, rendezetlen adatszerkezet. A halmazokat gyakran használják az elemek egyedi értékeinek tárolására vagy az elemek közötti műveletek végrehajtására.</string>
+    <string name="muveletekPy">5. Adatszerkezetek műveletei:</string>
+    <string name="muveletekPython">Elemek hozzáadása: append(), add() \nElemek eltávolítása: remove(), pop(), discard() \nElemek hozzáférése: Indexelés vagy kulcs alapján \nAdatszerkezetek összehasonlítása: ==, != \nHalmazműveletek: Unió, metszet, különbség stb.</string>
+    <string name="regexPy">Szövegkezelés</string>
+    <string name="listsPy">Listák</string>
 </resources>
