@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class JavaCourseListActivity extends AppCompatActivity {
 
     Button homePage, backToChoseCourse;
-    TextView introduction, variables, variablesQuiz, operators, operatorsQuiz, loops, loopsQuiz, arrays, arraysQuiz, methods, methodsQuiz, classes;
+    TextView introduction, variables, variablesQuiz, operators, operatorsQuiz, loops, loopsQuiz, arrays, arraysQuiz, methods, methodsQuiz, classes, types;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,7 @@ public class JavaCourseListActivity extends AppCompatActivity {
         methods = findViewById(R.id.methodsJava);
         methodsQuiz = findViewById(R.id.methodsQuizJava);
         classes = findViewById(R.id.classesJava);
+        types = findViewById(R.id.typeJava);
 
         homePage.setOnClickListener(view -> {
             Intent intent = new Intent(JavaCourseListActivity.this, MainActivity.class);
@@ -99,6 +100,11 @@ public class JavaCourseListActivity extends AppCompatActivity {
         });
         classes.setOnClickListener(view -> {
             Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_11_ClassActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        types.setOnClickListener(view -> {
+            Intent intent = new Intent(JavaCourseListActivity.this, JavaCourse_12_TypeconversionActivity.class);
             startActivity(intent);
             finish();
         });
