@@ -1,9 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".JavaCourse_10_MethodsQuizActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/methods2"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="25sp"
+        android:id="@+id/methodTitle"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/methodTitle"
+        android:text="@string/question"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/questionVariables05"
+        >
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionVariables05"
+        android:id="@+id/relativeOptions">
+        <Button
+            android:id="@+id/valasz01Variables05"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/firstOptionVar"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/valasz02Variables05"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/secondOptionVar"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:id="@+id/valasz03Variables05"
+            android:text="@string/thirdOptionVar"
+            android:fontFamily="@font/aldrich"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="330dp"
+            android:id="@+id/valasz04Variables05"
+            android:text="@string/fourthOptionVar"
+            android:fontFamily="@font/aldrich"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="30dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/backToJavaList09"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/relativeOptions"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        app:icon="?attr/actionModeCloseDrawable" />
+
+    <Button
+        android:id="@+id/nextToClass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeOptions"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/classesNext"
+        android:textColor="@color/white"
+        app:icon="@drawable/iconnext" />
+
+</RelativeLayout>
