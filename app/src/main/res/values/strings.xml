@@ -219,4 +219,24 @@
     <string name="paradigmPy">Többparadigmás: Python támogatja az objektumorientált, funkcionális és procedurális programozási paradigma egyes elemeit.</string>
     <string name="sokoldalu">Sokoldalúság: Python alkalmazható sokféle területen, beleértve a webfejlesztést, adatelemzést, gépi tanulást, szoftverfejlesztést és sok más területet.</string>
     <string name="syntaxBtn">Szintaxis</string>
+    <string name="szintaxPy">Alapok és alapvető szintaxis</string>
+    <string name="synPy">A Python programozási nyelv alapjai azok a kulcsfontosságú fogalmak és szintaxisok, amelyekre minden kezdőnek szüksége van ahhoz, hogy hatékonyan kódolhasson. Ezek közé tartoznak:</string>
+    <string name="variPy">1. Változók és adattípusok:</string>
+    <string name="valtozokPy">Változók: A változók az értékek tárolására szolgálnak. A Pythonban a változókat nem kell előre deklarálni, egyszerűen csak nevet kell adni nekik, és értéket lehet hozzárendelni.</string>
+    <string name="typesPy">2. Adattípusok:</string>
+    <string name="tipusokPy">A Python többféle adattípust támogat, mint például egész számok, lebegőpontos számok, stringek, listák, tuple-ök, szótárak stb.</string>
+    <string name="operatorsPy">3. Operátorok:</string>
+    <string name="opsPy">A Python számos operátort támogat, amelyekkel műveleteket végezhetünk változókon és értékeken.</string>
+    <string name="aritmetikaiPy">Aritmetikai operátorok: Összeadás (+), kivonás (-), szorzás (*), osztás (/), egész osztás (//), maradékos osztás (%), hatványozás (**).</string>
+    <string name="osszehasonlitoPy">4. Összehasonlító operátorok:</string>
+    <string name="hasonlitoPy"><![CDATA[Egyenlőség (==), nem egyenlőség (!=), nagyobb (>), kisebb (<), nagyobb vagy egyenlő (>=), kisebb vagy egyenlő (<=).]]></string>
+    <string name="logicPy">5. Logikai operátorok:</string>
+    <string name="logikaiPy">És (and), vagy (or), nem (not).</string>
+    <string name="elagazasPy">6. Feltételes utasítások:</string>
+    <string name="feltPy">A feltételes utasítások segítségével különböző műveleteket hajthatunk végre különböző feltételek függvényében.</string>
+    <string name="ciklusokPy">7. Ciklusok:</string>
+    <string name="loopsPy">A ciklusok lehetővé teszik, hogy egy adott műveletet ismételten hajtsunk végre.For ciklus: Iterál egy adott iterálható objektumon (pl. lista, tuple) vagy egy szekvencián.</string>
+    <string name="forPy">For ciklus: Iterál egy adott iterálható objektumon (pl. lista, tuple) vagy egy szekvencián.</string>
+    <string name="whilePy">While ciklus: Addig ismétel, amíg a megadott feltétel igaz.</string>
+    <string name="nextModulesPy">Modulok</string>
 </resources>
