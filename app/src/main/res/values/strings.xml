@@ -178,4 +178,16 @@
     <string name="TV_64">A Java támogatja a metódus túlterhelését, ami azt jelenti, hogy ugyanazt a metódusnevet több változatban is lehet definiálni, amelyek különböznek a paraméterek számától vagy típusától. Például:</string>
     <string name="methods2">5. kvíz: Metódusok</string>
     <string name="classesNext">Osztályok</string>
+    <string name="classes1">Osztályok</string>
+    <string name="introClass">Az osztályok alapvető építőkövei a Java programozási nyelvnek. Az osztályok olyan sablonok, melyek segítségével objektumokat hozhatunk létre. Az objektumok az adatokat és a hozzájuk kapcsolódó műveleteket (metódusokat) egyetlen egységbe zárják. Itt van egy részletesebb kifejtés az osztályokkal kapcsolatban:</string>
+    <string name="declareClass">1. Osztálydeklaráció:</string>
+    <string name="declareCl">Az osztálydeklaráció meghatározza az osztály nevét és a benne tárolt adatok és műveletek típusait. Például:</string>
+    <string name="tags">2. Adattagok:</string>
+    <string name="fields">Az adattagok (vagy mezők) az osztály által tárolt adatok. Ezek az osztály változói, amelyek az osztályon belül definiáltak. Például:</string>
+    <string name="classMethods">3. Metódusok:</string>
+    <string name="methodsDeclare">A metódusok a műveletek, amelyek az osztályban végrehajthatók. Ezek az osztály funkciói, amelyek elérhetők az osztály objektumai számára. Például:</string>
+    <string name="objects">4. Objektumok létrehozása:</string>
+    <string name="TV_70">Az osztály alapján objektumokat hozhatunk létre. Az objektumok példányosításával a memóriában helyet foglalunk az adatoknak és a metódusoknak. Például:</string>
+    <string name="inherit">5. Öröklődés:</string>
+    <string name="inheritance">Az öröklődés lehetővé teszi egy osztály (a leszármazott osztály) számára, hogy örökölje egy másik osztály (a szülő osztály) tulajdonságait és metódusait. Ez a Java egyik alapvető objektumorientált tulajdonsága. Például:</string>
 </resources>

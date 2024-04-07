@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JavaCourses_11_ClassActivity">
+    tools:context=".JavaCourse_12_TypeconversionActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

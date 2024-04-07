@@ -73,7 +73,7 @@ public class JavaCourse_10_MethodsQuizActivity extends AppCompatActivity {
         });
 
         btnNextClasses.setOnClickListener(view -> {
-            Intent intent = new Intent(JavaCourse_10_MethodsQuizActivity.this, JavaCourses_11_ClassActivity.class);
+            Intent intent = new Intent(JavaCourse_10_MethodsQuizActivity.this, JavaCourse_11_ClassActivity.class);
             startActivity(intent);
             finish();
         });

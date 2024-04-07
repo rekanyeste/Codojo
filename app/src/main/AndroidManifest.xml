@@ -16,13 +16,13 @@
         android:theme="@style/Theme.Codojo"
         tools:targetApi="31">
         <activity
-            android:name=".JavaCourses_Final_QuizActivity"
+            android:name=".JavaCourse_Final_QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".JavaCourses_12_TypeconversionActivity"
+            android:name=".JavaCourse_12_TypeconversionActivity"
             android:exported="false" />
         <activity
-            android:name=".JavaCourses_11_ClassActivity"
+            android:name=".JavaCourse_11_ClassActivity"
             android:exported="false" />
         <activity
             android:name=".JavaCourse_10_MethodsQuizActivity"
