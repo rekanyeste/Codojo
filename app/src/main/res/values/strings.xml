@@ -297,4 +297,5 @@
     <string name="osModulePy">6. Fájlkezelés os modullal:</string>
     <string name="osModulPy">Az os modul kényelmes módot biztosít a fájlok kezelésére, mint például fájlok létrehozása, törlése, átnevezése stb.</string>
     <string name="finalQuizPy1">Összegző kvíz</string>
+    <string name="finalPy">Python összegzés</string>
 </resources>
