@@ -1,1 +1,1 @@
-Szakdolgozat 2024
+# Szakdolgozat 2024
